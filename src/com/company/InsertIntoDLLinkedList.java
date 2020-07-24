@@ -7,7 +7,7 @@ public class InsertIntoDLLinkedList {
 
         DoublyLinkedListNode temp=head;
 
-
+// 1-- 2 -- 3 --4 -- 10
         while(temp!=null)
         {
             if(temp.data<data) {
@@ -21,12 +21,21 @@ public class InsertIntoDLLinkedList {
             }
             else if(temp.data>data)
             {
-                DoublyLinkedListNode swapNode=temp;
+               // DoublyLinkedListNode swapNode=temp; 4 -- 5 -- 10
+
+
+                if (temp.prev == null) {
+                    DoublyLinkedListNode newNode = new DoublyLinkedListNode(data);
+                    newNode.next = temp;
+                    break;
+                }
+                temp=temp.prev;
+
                 DoublyLinkedListNode newNode=new DoublyLinkedListNode(data);
-                newNode.data=data;
-                newNode.prev=temp.prev;
-                newNode.next=swapNode;
-                temp.prev=newNode;
+                newNode.next=temp.next;
+                temp.next=newNode;
+                newNode.prev = temp;
+
                 break;
             }
 
