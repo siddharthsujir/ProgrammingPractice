@@ -8,7 +8,7 @@ public class StackImpl {
     public static void main(String[] args)
     {
         int[] array = {5,4,3,2,1};
-        Stack s = new Stack();
+        Stack2 s = new Stack2();
 
         for(int i:array)
         {
@@ -31,10 +31,10 @@ public class StackImpl {
 }
 
 
-class Stack
+class Stack2
 {
     Node top;
-    Stack()
+    Stack2()
     {
         top=null;
     }
