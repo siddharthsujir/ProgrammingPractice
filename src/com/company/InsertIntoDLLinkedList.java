@@ -1,45 +1,34 @@
 package com.company;
 
+import sun.print.DialogOwner;
+
 public class InsertIntoDLLinkedList {
 
     static DoublyLinkedListNode sortedInsert(DoublyLinkedListNode head, int data) {
 
 
-        DoublyLinkedListNode temp=head;
-
+        DoublyLinkedListNode temp = head;
+        DoublyLinkedListNode node = new DoublyLinkedListNode(data);
 // 1-- 2 -- 3 --4 -- 10
-        while(temp!=null)
+
+        if (temp.data > data) {
+            node.next = temp;
+            temp.prev = node;
+            node.prev = null;
+        } else
         {
-            if(temp.data<data) {
-                if (temp.next == null) {
-                    DoublyLinkedListNode newNode = new DoublyLinkedListNode(data);
-                    temp.next = newNode;
-                    newNode.prev = temp;
-                    break;
-                }
-                temp = temp.next;
-            }
-            else if(temp.data>data)
+            while(temp.next!=null && temp.next.data<data)
             {
-               // DoublyLinkedListNode swapNode=temp; 4 -- 5 -- 10
-
-
-                if (temp.prev == null) {
-                    DoublyLinkedListNode newNode = new DoublyLinkedListNode(data);
-                    newNode.next = temp;
-                    break;
-                }
-                temp=temp.prev;
-
-                DoublyLinkedListNode newNode=new DoublyLinkedListNode(data);
-                newNode.next=temp.next;
-                temp.next=newNode;
-                newNode.prev = temp;
-
-                break;
+                temp=temp.next;
             }
 
+            node.next=temp.next;
+            node.prev=temp;
+            temp.next=node;
+
+            return head;
         }
+
         return head;
 
     }
