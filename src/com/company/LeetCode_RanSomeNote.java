@@ -25,6 +25,7 @@ public class LeetCode_RanSomeNote {
             else
                 return false;
         }
+        return true;
     }
 
 }
