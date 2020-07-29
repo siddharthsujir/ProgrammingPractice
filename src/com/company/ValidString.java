@@ -33,7 +33,7 @@ public class ValidString {
                 totaldiff=totaldiff+diff;
                 if(diff>1 || totaldiff>1)
                     return "NO";
-                
+
 
             }
         }
