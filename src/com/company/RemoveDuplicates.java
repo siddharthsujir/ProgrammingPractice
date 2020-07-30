@@ -16,14 +16,33 @@ public class RemoveDuplicates {
 
     public int searchInsert(int[] nums, int target) {
 
-        for(int i =0;i< nums.length;i++)
+        int len=nums.length/2;
+        if(target==nums[len-1])
+            return len-1;
+        if(target<nums[len-1])
         {
-            if(nums[i]==target)
-                return i;
-            else if(nums[i]>target)
-                return i;
+            for(int i =0;i< len;i++)
+            {
+                if(nums[i]==target)
+                    return i;
+                else if(nums[i]>target)
+                    return i;
+            }
         }
-        return -1;
+        else
+        {
+            for(int i =len;i< nums.length;i++)
+            {
+                if(nums[i]==target)
+                    return i;
+                else if(nums[i]>target)
+                    return i;
+            }
+
+        }
+
+
+        return nums.length;
     }
 
     public static void main(String[] args)
