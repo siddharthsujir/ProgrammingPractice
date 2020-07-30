@@ -23,7 +23,7 @@ public class Leetcode_FirstNonRepeatingChar {
 
         }
 
-
+return -1;
 
     }
 }
