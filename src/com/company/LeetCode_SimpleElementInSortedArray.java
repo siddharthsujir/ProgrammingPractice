@@ -36,7 +36,7 @@ public class LeetCode_SimpleElementInSortedArray {
         return -1;
 
     }
-    
+
 
     public static void main(String[] args)
     {
