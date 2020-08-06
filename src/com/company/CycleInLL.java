@@ -5,8 +5,8 @@ import java.util.HashMap;
 public class CycleInLL {
 
 
-    boolean hasCycle(Node head) {
-        HashMap<Node, Integer> hm= new HashMap<>();
+    boolean hasCycle(LLNode head) {
+        HashMap<LLNode, Integer> hm= new HashMap<>();
         while(head!= null)
         {
             if(hm.containsKey(head))

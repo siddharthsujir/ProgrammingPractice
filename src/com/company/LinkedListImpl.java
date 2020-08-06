@@ -4,7 +4,7 @@ public class LinkedListImpl {
     public static void main(String[] args)
     {
         int[] a = {1,2,3,4,5};
-        Node head=null;
+        LLNode head=null;
 
         // add Each elements of array to LinkedList
         for(int element : a)
@@ -31,24 +31,24 @@ public class LinkedListImpl {
 
     }
 
-    public static Node insertAtBeginning(Node head,int value)
+    public static LLNode insertAtBeginning(LLNode head, int value)
     {
 
-        Node new_node =new Node(value);
-        new_node.setNext(null);
+        LLNode new_LL_node =new LLNode(value);
+        new_LL_node.setNext(null);
 
         if(head==null)
         {
-            head=new_node;
+            head= new_LL_node;
         }
         else
         {
-            new_node.next=head;
+            new_LL_node.next=head;
         }
-        return new_node;
+        return new_LL_node;
     }
 
-    public static Node removeFromHead(Node head)
+    public static LLNode removeFromHead(LLNode head)
     {
         if(head==null)
             return null;
@@ -60,30 +60,30 @@ public class LinkedListImpl {
         return head;
     }
 
-    public static Node addElementToLinkedList(Node head, int value)
+    public static LLNode addElementToLinkedList(LLNode head, int value)
     {
-        Node new_node =new Node(value);
-        new_node.setNext(null);
+        LLNode new_LL_node =new LLNode(value);
+        new_LL_node.setNext(null);
 
         if(head==null)
         {
-            head=new_node;
+            head= new_LL_node;
         }
         else {
-            Node temp = head;
+            LLNode temp = head;
             while (temp.next != null)
             {
                 temp=temp.next;
             }
-            temp.next=new_node;
+            temp.next= new_LL_node;
         }
 
         return head;
     }
 
-    public static Node removeElementFromLinkedList(Node head,int value)
+    public static LLNode removeElementFromLinkedList(LLNode head, int value)
     {
-        Node temp=head;
+        LLNode temp=head;
         if(head.getElement()==value)
         {
             head=head.getNext();
@@ -100,7 +100,7 @@ public class LinkedListImpl {
     return head;
     }
 
-    public static void printElementsOfLinkedList(Node n)
+    public static void printElementsOfLinkedList(LLNode n)
     {
         while(n!=null)
         {
@@ -114,12 +114,12 @@ public class LinkedListImpl {
 
 
 
-class Node
+class LLNode
 {
  int element;
- Node next;
+ LLNode next;
 
- Node(int element)
+ LLNode(int element)
  {
      this.element=element;
      this.next=null;
@@ -133,11 +133,11 @@ class Node
         this.element = element;
     }
 
-    public Node getNext() {
+    public LLNode getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(LLNode next) {
         this.next = next;
     }
 }

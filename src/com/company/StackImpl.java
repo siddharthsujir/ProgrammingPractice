@@ -17,7 +17,7 @@ public class StackImpl {
         //s.printStack();
 
         System.out.println("Starting to pop");
-        Node top=s.top;
+        LLNode top=s.top;
         while (top!=null)
         {
             System.out.println(top.getElement());
@@ -33,7 +33,7 @@ public class StackImpl {
 
 class Stack2
 {
-    Node top;
+    LLNode top;
     Stack2()
     {
         top=null;
@@ -50,7 +50,7 @@ class Stack2
         LinkedListImpl.printElementsOfLinkedList(top);
     }
 
-    public  Node pop()
+    public LLNode pop()
     {
         top=LinkedListImpl.removeFromHead(top);
         return top;
