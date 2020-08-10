@@ -17,7 +17,8 @@ public class HackerRank_RemoveElement {
             else
             {
                 i++;
-                j++;
+                if(i==j)
+                    j++;
             }
         }
         return count;

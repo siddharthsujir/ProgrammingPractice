@@ -37,10 +37,17 @@ public class InsertIntoDLLinkedList {
     static DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
 
         DoublyLinkedListNode temp= head;
+        DoublyLinkedListNode newNode=null;
 
-        while(temp!= null)
+        while(temp.next!= null)
         {
-            temp.prev=temp.next;
+           temp=temp.next;
+        }
+        newNode=new DoublyLinkedListNode(temp.data);
+        while(temp.prev!=null)
+        {
+            newNode=temp;
+            temp=temp.prev;
         }
         return head;
     }
