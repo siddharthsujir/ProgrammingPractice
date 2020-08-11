@@ -20,11 +20,14 @@ public class HackerRank_RemoveElement {
             if(nums[i]==val)
             {
                 if(nums[j]==val)
+                {
+                    count++;
                     j++;
+                }
+
                 else
                 {
                     nums[i]=nums[j];
-                    count++;
                     i++;
                     j++;
                 }
@@ -43,14 +46,13 @@ public class HackerRank_RemoveElement {
 //        {
 //            System.out.print(nums[k]+" ");
 //        }
-        if(i>0 && i==nums.length && nums[i-1]==val)
-            count=count+1;
+
         return nums.length-count;
 
     }
     public static void main(String[] args)
     {
-        int[] arr={3,3};
+        int[] arr={3,2,2,3};
         System.out.println(removeElement(arr,3));
     }
 }
