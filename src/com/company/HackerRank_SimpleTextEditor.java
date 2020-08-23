@@ -77,7 +77,4 @@ public class HackerRank_SimpleTextEditor {
             System.out.println("");
     }
 
-
-
-
 }
