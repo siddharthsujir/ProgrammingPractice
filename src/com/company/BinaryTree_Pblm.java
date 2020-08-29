@@ -13,6 +13,13 @@ package com.company;
 //6   2
 //7   2
 
+import sun.awt.image.ImageWatched;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Queue;
+
 class TreeNode
 {
     int data;
@@ -66,6 +73,42 @@ public class BinaryTree_Pblm {
                 System.out.println(root.data);
                 inOrder(root.right);
     }
+
+    public static void levelOrder(Node root) {
+
+        Queue<Node> queue=new LinkedList<>();
+        queue.add(root);
+
+        while(!queue.isEmpty())
+        {
+            Node temp=queue.poll();
+            System.out.println(temp.data);
+
+            if(temp.left!=null)
+            {
+                queue.add(temp.left);
+            }
+            if(temp.right!=null)
+            {
+                queue.add(temp.right);
+            }
+
+        }
+
+    }
+
+    public static void topView(Node root) {
+
+            if(root==null)
+                return;
+            else
+            {
+                System.out.print(root.data+" ");
+                topView(root.right);
+            }
+
+    }
+
 
 
 
