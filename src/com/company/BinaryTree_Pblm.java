@@ -16,13 +16,20 @@ package com.company;
 class TreeNode
 {
     int data;
-    TreeNode leftNode;
-    TreeNode righNode;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int data)
+    {
+        this.data=data;
+        this.left=null;
+        this.right=null;
+    }
 
     TreeNode(int data, TreeNode leftNode,TreeNode rightNode)
     {
-        this.leftNode=leftNode;
-        this.righNode=rightNode;
+        this.left=leftNode;
+        this.right=rightNode;
         this.data=data;
     }
 }
@@ -31,12 +38,35 @@ public class BinaryTree_Pblm {
 
 
 
-        public static void findDistanceFromRoot(TreeNode node)
+        public static void inOrderTraversal_Recursion(TreeNode root)
         {
-
-
-
+            if(root==null)
+                return;
+            inOrderTraversal_Recursion(root.left);
+            System.out.println(root.data);
+            inOrderTraversal_Recursion(root.right);
         }
+
+    public static void preOrder(TreeNode root)
+    {
+        if(root==null)
+            return;
+        if(root!=null)
+            System.out.println(root.data);
+            preOrder(root.left);
+            preOrder(root.right);
+    }
+
+    public static void inOrder(Node root) {
+
+            if(root==null)
+                return;
+            else
+                inOrder(root.left);
+                System.out.println(root.data);
+                inOrder(root.right);
+    }
+
 
 
 }
