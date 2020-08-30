@@ -15,7 +15,7 @@ public class HackerRank_CatAndMouse {
         else if(catA==catB)
             return  "Mouse C";
 
-
+        return "";
     }
 
 }

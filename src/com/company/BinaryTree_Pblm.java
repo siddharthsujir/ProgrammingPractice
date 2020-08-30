@@ -110,6 +110,26 @@ public class BinaryTree_Pblm {
     }
 
 
+    public static Node lca(Node root, int v1, int v2) {
+        // Write your code here.
+        if(root==null)
+            return null;
+
+        if(root.data==v1 || root.data==v2)
+            return root;
+
+        Node root_left_LCA=lca(root.left,v1,v2);
+        Node root_right_LCA=lca(root.right,v1,v2);
+
+        if(root_left_LCA!=null && root_right_LCA!=null)
+            return root;
+
+        return root_left_LCA!=null?root_left_LCA:root_right_LCA;
+
+
+    }
+
+
 
 
 }
