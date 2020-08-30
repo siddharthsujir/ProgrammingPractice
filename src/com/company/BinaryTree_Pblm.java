@@ -130,6 +130,64 @@ public class BinaryTree_Pblm {
     }
 
 
+    boolean checkBST(Node root) {
+            if(root==null)
+            {
+                System.out.println("Here1");
+                return true;
+            }
+
+
+        if(root.left==null && root.right==null)
+        {
+            System.out.println("Here2");
+            return true;
+        }
+
+
+        if(root.left==null)
+        {
+            if(root.right.data<root.data)
+            {
+                System.out.println("Here3");
+                return false;
+            }
+
+        }
+
+        if(root.right==null)
+        {
+            if(root.left.data>=root.data)
+            {
+                System.out.println("Here4");
+                return false;
+            }
+
+        }
+
+        if((root.left.data>=root.data) || (root.right.data<root.data))
+        {
+            System.out.println("Here5");
+            return false;
+        }
+
+
+         if(!checkBST(root.left) || !checkBST(root.right))
+         {
+             System.out.println("Here6");
+             return false;
+         }
+
+         else
+         {
+             System.out.println("Here7");
+             return true;
+         }
+
+
+    }
+
+
 
 
 }
