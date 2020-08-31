@@ -15,10 +15,7 @@ package com.company;
 
 import sun.awt.image.ImageWatched;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 class TreeNode
 {
@@ -187,7 +184,48 @@ public class BinaryTree_Pblm {
 
     }
 
+    public List<List<Integer>> levelOrder(TreeNode root) {
 
+        List<List<Integer>>  output=new LinkedList<List<Integer>>();
+        Queue<TreeNode> q=new LinkedList<>();
+        int i=0;
+        int j=0;
+        q.add(root);
+        output.add(i,new ArrayList<Integer>());
+        while(!q.isEmpty())
+        {
+            TreeNode current=q.poll();
+            if(current.left!=null)
+                    q.add(current.left);
+
+            if(current.right!=null)
+                q.add(current.right);
+
+            if(i==0)
+            {
+                output.get(i).add(j,current.data);
+               j=0;
+               i++;
+                output.add(i,new ArrayList<Integer>());
+            }
+            else
+            {
+
+                output.get(i).add(j,current.data);
+                j++;
+                if(j==2)
+                {
+                    j=0;
+                    i++;
+                    output.add(i,new ArrayList<Integer>());
+                }
+            }
+
+        }
+        if(output.get(i).isEmpty())
+            output.remove(i);
+        return output;
+    }
 
 
 }
