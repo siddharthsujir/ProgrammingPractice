@@ -227,5 +227,18 @@ public class BinaryTree_Pblm {
         return output;
     }
 
+    public int maxDepth(TreeNode root) {
+
+            if(root==null)
+                return 0;
+            else
+            {
+                int left_depth= maxDepth(root.left)+1;
+                int right_depth=maxDepth(root.right)+1;
+               return left_depth>right_depth? left_depth: right_depth
+            }
+
+
+    }
 
 }
