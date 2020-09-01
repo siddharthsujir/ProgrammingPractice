@@ -25,7 +25,6 @@ public class LeetCode_FirstBadVersion {
 
             i=i-2;
 
-
         }
 
         if(isBadVersion(i+1))
