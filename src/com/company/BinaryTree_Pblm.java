@@ -14,6 +14,7 @@ package com.company;
 //7   2
 
 import sun.awt.image.ImageWatched;
+import sun.reflect.generics.tree.Tree;
 
 import java.util.*;
 
@@ -241,4 +242,62 @@ public class BinaryTree_Pblm {
 
     }
 
+    public static TreeNode convertSortedArrayToBinaryTree(int[] arr)
+    {
+        TreeNode bst=null;
+        int length=arr.length;
+        int middleElement=arr[length/2];
+        bst=new TreeNode(middleElement,null,null);
+        bst.left=insertIntoLeftBST(bst,arr,0,(length/2)-1);
+        bst.right=insertIntoRightBST(bst,arr,(length/2)-1,length-1);
+
+        return bst;
+    }
+
+    public static TreeNode insertIntoLeftBST(TreeNode root,int[] arr, int start,int end)
+    {
+        TreeNode child=root;
+
+        for(int k=end;k>=start;k--)
+        {
+            if(arr[k]<child.data)
+            {
+                child.left=new TreeNode(arr[k],null,null);
+                child=child.left;
+            }
+            else if(arr[k]>root.data)
+            {
+                child.right=new TreeNode(arr[k],null,null);
+                child=child.right;
+            }
+        }
+        return root;
+    }
+
+    public static TreeNode insertIntoRightBST(TreeNode root,int[] arr, int start,int end)
+    {
+        TreeNode child=root;
+
+        for(int k=start;k<=end;k++)
+        {
+            if(arr[k]<child.data)
+            {
+                child.left=new TreeNode(arr[k],null,null);
+                child=child.left;
+            }
+            else if(arr[k]>root.data)
+            {
+                child.right=new TreeNode(arr[k],null,null);
+                child=child.right;
+            }
+        }
+        return root;
+    }
+
+    public static  void main(String[] args)
+    {
+        int[] arr={-10,-3,0,5,9};
+
+        TreeNode test=convertSortedArrayToBinaryTree(arr);
+    }
 }
