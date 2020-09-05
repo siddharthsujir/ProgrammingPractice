@@ -11,6 +11,24 @@ public class LLImpl {
 
     }
 
+    static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
+
+        SinglyLinkedListNode temp=head;
+
+        if(head==null)
+            return new SinglyLinkedListNode(data);
+
+        while(temp.next!=null)
+        {
+            temp=temp.next;
+        }
+
+        temp.next=new SinglyLinkedListNode(data);
+
+        return head;
+
+    }
+
 }
 
 
