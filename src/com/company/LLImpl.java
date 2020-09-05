@@ -29,6 +29,26 @@ public class LLImpl {
 
     }
 
+    static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode head, int data, int position) {
+
+        SinglyLinkedListNode temp=head;
+        int count=0;
+
+        while (count<position-1 && temp!=null)
+        {
+            temp=temp.next;
+            count++;
+        }
+
+        SinglyLinkedListNode newNode=new SinglyLinkedListNode(data);
+        SinglyLinkedListNode swapnode=temp.next;
+        temp.next=newNode;
+        newNode.next=swapnode;
+
+        return head;
+
+    }
+
 }
 
 
