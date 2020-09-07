@@ -49,6 +49,29 @@ public class LLImpl {
 
     }
 
+    static SinglyLinkedListNode deleteNodeAtPosition(SinglyLinkedListNode head,int pos)
+    {
+        SinglyLinkedListNode temp=head;
+        int count=0;
+
+        if(pos==0)
+        {
+            head=head.next;
+            return head;
+        }
+
+
+        while(count<pos-1 && temp!=null)
+        {
+            temp=temp.next;
+            count++;
+        }
+        SinglyLinkedListNode tempN=temp.next.next;
+        temp.next=null;
+        temp.next=tempN;
+        return head;
+    }
+
 }
 
 
