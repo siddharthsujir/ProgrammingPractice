@@ -3,7 +3,7 @@ package com.company;
 public class LLImpl {
     static SinglyLinkedListNode insertNodeAtHead(SinglyLinkedListNode llist, int data) {
 
-        SinglyLinkedListNode sl=new SinglyLinkedListNode();
+        SinglyLinkedListNode sl=new SinglyLinkedListNode(data);
         sl.data=data;
 
         sl.next=llist;
