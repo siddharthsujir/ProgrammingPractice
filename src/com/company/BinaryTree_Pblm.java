@@ -128,7 +128,7 @@ public class BinaryTree_Pblm {
     }
 
 
-    boolean checkBST(Node root) {
+    boolean checkBST2(Node root) {
             if(root==null)
             {
                 System.out.println("Here1");
@@ -293,6 +293,46 @@ public class BinaryTree_Pblm {
         }
         return root;
     }
+
+
+   public static boolean checkBST(Node root) {
+        if(root==null)
+            return true;
+        if(root.left!=null && checkMax(root.left)>root.data)
+            return false;
+        if(root.right!=null && checkMin(root.right)<root.data)
+            return false;
+
+        if(!checkBST(root.left) || !checkBST(root.right))
+            return false;
+
+        return true;
+    }
+
+    static int max=0;
+        static int min=0;
+    public static int checkMax(Node root)
+    {
+        if(root==null)
+            return max;
+        else
+            max=checkMax(root.left)>max?checkMax(root.left):max;
+            max=checkMax(root.right)>max?checkMax(root.right):max;
+
+            return max;
+    }
+
+    public static int checkMin(Node root)
+    {
+        if(root==null)
+            return min;
+        else
+            min=checkMin(root.left)>min?checkMin(root.left):min;
+        min=checkMin(root.right)>min?checkMin(root.right):min;
+
+        return max;
+    }
+
 
     public static  void main(String[] args)
     {
