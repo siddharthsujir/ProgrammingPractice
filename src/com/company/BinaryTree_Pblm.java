@@ -296,17 +296,18 @@ public class BinaryTree_Pblm {
 
 
    public static boolean checkBST(Node root) {
+        return checkBSTUtil(root,Integer.MIN_VALUE,Integer.MAX_VALUE);
+    }
+
+    public static boolean checkBSTUtil(Node root,int min,int max)
+    {
         if(root==null)
             return true;
-        if(root.left!=null && checkMax(root.left)>root.data)
-            return false;
-        if(root.right!=null && checkMin(root.right)<root.data)
+        if(root.data<min || root.data>max)
             return false;
 
-        if(!checkBST(root.left) || !checkBST(root.right))
-            return false;
 
-        return true;
+        return (checkBSTUtil(root.left,min,root.data) && checkBSTUtil(root.right,root.data,max));
     }
 
     static int max=0;
