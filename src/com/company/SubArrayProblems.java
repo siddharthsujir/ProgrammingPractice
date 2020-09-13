@@ -1,13 +1,40 @@
 package com.company;
 
+import java.util.HashSet;
+
 public class SubArrayProblems {
 
     public static void main(String[] args)
     {
-        int[] arr={1,2,3,4};
+        int[] arr={1, 2, 3, 3, 4, 5, 2, 1};
         //printSubArrays(arr);
         //sumOfAllSubArrays(arr);
-        subArrayOfSizeKwithPerfectSquareSums(arr,3);
+        //subArrayOfSizeKwithPerfectSquareSums(arr,3);
+        maxSumofContiguousDistinctSubArray(arr);
+    }
+
+    public static void maxSumofContiguousDistinctSubArray(int[] arr)
+    {
+        int i=0,j=0;
+        HashSet<Integer> hs=new HashSet();
+        int sum=0,maxSum=arr[0];
+        while(i<arr.length-1 && j< arr.length)
+        {
+            if(hs.contains(arr[j]))
+            {
+                hs.remove(arr[i]);
+                sum-=arr[i];
+                i++;
+            }
+            else
+            {
+                sum+=arr[j];
+                maxSum=sum>maxSum?sum:maxSum;
+                hs.add(arr[j]);
+                j++;
+            }
+        }
+        System.out.println(maxSum);
     }
 
     public static void printSubArrays(int[] arr)
