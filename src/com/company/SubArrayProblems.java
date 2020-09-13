@@ -6,7 +6,8 @@ public class SubArrayProblems {
     {
         int[] arr={1,2,3,4};
         //printSubArrays(arr);
-        sumOfAllSubArrays(arr);
+        //sumOfAllSubArrays(arr);
+        subArrayOfSizeKwithPerfectSquareSums(arr,3);
     }
 
     public static void printSubArrays(int[] arr)
@@ -38,5 +39,29 @@ public class SubArrayProblems {
             System.out.println();
         }
         System.out.println(resut);
+    }
+
+    public static void subArrayOfSizeKwithPerfectSquareSums(int[] arr, int k)
+    {
+        for(int i=0;i<=arr.length-k;i++)
+        {
+            int sum=findSumOfSubArray(arr,i,i+k-1);
+            double sqrt=Math.sqrt(sum);
+            if(sqrt-Math.floor(sqrt)==0)
+                System.out.println(sum);
+        }
+
+        System.out.println("-1");
+
+    }
+
+    public static int findSumOfSubArray(int[] arr,int start,int end)
+    {
+        int sum=0;
+        for(int i=start;i<=end;i++)
+        {
+            sum+=arr[i];
+        }
+        return sum;
     }
 }
