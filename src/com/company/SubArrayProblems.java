@@ -6,11 +6,27 @@ public class SubArrayProblems {
 
     public static void main(String[] args)
     {
-        int[] arr={1, 2, 3, 3, 4, 5, 2, 1};
+        int[] arr={-2,1,-3,4,-1,2,1,-5,4};
         //printSubArrays(arr);
         //sumOfAllSubArrays(arr);
         //subArrayOfSizeKwithPerfectSquareSums(arr,3);
-        maxSumofContiguousDistinctSubArray(arr);
+        //maxSumofContiguousDistinctSubArray(arr);
+        System.out.println(maxSubArray(arr));;
+    }
+
+    public static int maxSubArray(int[] nums) {
+
+        int max_ending_here=0;
+        int max_so_far=Integer.MIN_VALUE;
+
+        for(int i=0;i<nums.length;i++)
+        {
+            max_ending_here=max_ending_here+nums[i];
+            max_so_far=Math.max(max_ending_here,max_so_far);
+            if(max_ending_here<0)
+                max_ending_here=0;
+        }
+        return max_so_far;
     }
 
     public static void maxSumofContiguousDistinctSubArray(int[] arr)
