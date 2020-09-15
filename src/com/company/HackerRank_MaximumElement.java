@@ -31,12 +31,12 @@ public class HackerRank_MaximumElement {
                 else {
                     if(node.key<val)
                     {
-                        System.out.println("Entered Here!");
+                        System.out.println("Entered Here!"+ val);
                         Node2 newNode=new Node2(val,0);
-                        newNode.next=node;
                         newNode.prev=node.prev;
+                        newNode.next=node;
                         node.prev=newNode;
-
+                        node=newNode;
                     }
                     else{
                         Node2 temp=node;
