@@ -13,7 +13,7 @@ public class LeetCode_LongestSubstringWORepeatingChars {
 
         if(s.length()==0)
             return 0;
-        
+
         int i=0;
         int j=i+1;
         int count=1;
