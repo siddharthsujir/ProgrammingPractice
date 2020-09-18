@@ -72,6 +72,88 @@ public class LLImpl {
         return head;
     }
 
+    static SinglyLinkedListNode addTwoNumbers(SinglyLinkedListNode l1, SinglyLinkedListNode l2) {
+        SinglyLinkedListNode output=null;
+        int sum=0,carry=0;
+        while(l1!=null && l2!=null)
+        {
+            sum=sum+l1.data+l2.data+carry;
+            if(sum/10!=0)
+            {
+                carry=sum/10;
+                int val=sum%10;
+                output=addToOutputList(output,val);
+            }
+            else
+            {
+                output=addToOutputList(output,sum);
+
+                carry=0;
+            }
+            l1=l1.next;
+            l2=l2.next;
+        }
+
+        while (l1!=null)
+        {
+            sum=sum+l1.data+carry;
+            if(sum/10!=0)
+            {
+                carry=sum/10;
+                int val=sum%10;
+                output=addToOutputList(output,val);
+            }
+            else
+            {
+                output=addToOutputList(output,sum);
+
+                carry=0;
+            }
+            l1=l1.next;
+        }
+
+        while (l2!=null)
+        {
+            sum=sum+l2.data+carry;
+            if(sum/10!=0)
+            {
+                carry=sum/10;
+                int val=sum%10;
+                output=addToOutputList(output,val);
+            }
+            else
+            {
+                output=addToOutputList(output,sum);
+
+                carry=0;
+            }
+            l2=l2.next;
+        }
+
+        if(carry!=0)
+        {
+            output.next=new SinglyLinkedListNode(carry);
+        }
+
+        return output;
+    }
+
+    public static SinglyLinkedListNode addToOutputList(SinglyLinkedListNode output, int val)
+    {
+        if(output==null)
+            output=new SinglyLinkedListNode(val);
+        else
+        {
+            SinglyLinkedListNode temp=output;
+            while (temp.next!=null)
+            {
+                temp=temp.next;
+            }
+            temp.next=new SinglyLinkedListNode(val);
+        }
+        return output;
+    }
+
 }
 
 
