@@ -6,7 +6,7 @@ public class LeetCode_LongestSubstringWORepeatingChars {
 
     public static void main(String[] args)
     {
-        System.out.println(lengthOfLongestSubstring("pwwkew"));
+        System.out.println(lengthOfLongestSubstring("dvdf"));
     }
 
     public static int lengthOfLongestSubstring(String s) {
@@ -24,7 +24,8 @@ public class LeetCode_LongestSubstringWORepeatingChars {
         {
             if(!hm.containsKey(s.charAt(j)))
             {
-                count++;
+                System.out.println("if "+s.charAt(j));
+                count=j-i;
                 hm.put(s.charAt(j),j);
                 j++;
 
@@ -33,12 +34,14 @@ public class LeetCode_LongestSubstringWORepeatingChars {
             }
             else if(hm.get(s.charAt(j))>=i )
             {
-                count=0;
+                System.out.println("if else "+s.charAt(j));
+                count=count-1;
                 hm.put(s.charAt(j),j);
                 i++;
-                j++;
+                //j++;
             }
             else {
+                System.out.println("else"+s.charAt(j));
                 count++;
                 hm.put(s.charAt(j),j);
                 j++;
