@@ -334,6 +334,33 @@ public class BinaryTree_Pblm {
         return max;
     }
 
+    static int p=0;
+    static int output=0;
+    public int kthSmallest(TreeNode root, int k) {
+        p=0;
+        output=0;
+        inOrderTraversal(root,k);
+        return output;
+
+    }
+
+    public void inOrderTraversal(TreeNode node,int k)
+    {
+        if (node==null)
+            return;
+        else
+        {
+            inOrderTraversal(node.left,k);
+            p++;
+            if(p==k)
+                output=node.data;
+
+
+            inOrderTraversal(node.right,k);
+        }
+    }
+
+    }
 
     public static  void main(String[] args)
     {
