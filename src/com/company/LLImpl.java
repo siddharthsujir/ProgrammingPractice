@@ -77,7 +77,7 @@ public class LLImpl {
         int sum=0,carry=0;
         while(l1!=null && l2!=null)
         {
-            sum=sum+l1.data+l2.data+carry;
+            sum=l1.data+l2.data+carry;
             if(sum/10!=0)
             {
                 carry=sum/10;
@@ -87,7 +87,6 @@ public class LLImpl {
             else
             {
                 output=addToOutputList(output,sum);
-
                 carry=0;
             }
             l1=l1.next;
@@ -96,7 +95,7 @@ public class LLImpl {
 
         while (l1!=null)
         {
-            sum=sum+l1.data+carry;
+            sum=l1.data+carry;
             if(sum/10!=0)
             {
                 carry=sum/10;
@@ -114,7 +113,7 @@ public class LLImpl {
 
         while (l2!=null)
         {
-            sum=sum+l2.data+carry;
+            sum=l2.data+carry;
             if(sum/10!=0)
             {
                 carry=sum/10;
@@ -132,7 +131,8 @@ public class LLImpl {
 
         if(carry!=0)
         {
-            output.next=new SinglyLinkedListNode(carry);
+            //output.next=new SinglyLinkedListNode(carry);
+            output=addToOutputList(output,carry);
         }
 
         return output;
@@ -152,6 +152,30 @@ public class LLImpl {
             temp.next=new SinglyLinkedListNode(val);
         }
         return output;
+    }
+
+    public static void printLL(SinglyLinkedListNode node)
+    {
+        while (node!=null)
+        {
+            System.out.println(node.data);
+            node=node.next;
+        }
+    }
+
+
+    public static void main(String[] args)
+    {
+        int[] arr={1,2,3,4};
+        int i=0;
+        SinglyLinkedListNode node=null;
+        while (i<arr.length)
+        {
+            node=addToOutputList(node,arr[i]);
+            i++;
+        }
+
+        printLL(node);
     }
 
 }
