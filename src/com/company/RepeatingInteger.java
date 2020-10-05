@@ -4,6 +4,7 @@ public class RepeatingInteger {
 
     public static void repeatingInteger(int[] arr)
     {
+
         for(int i=0;i<arr.length;i++)
         {
             if(arr[Math.abs(arr[i])]>0)
@@ -31,7 +32,7 @@ public class RepeatingInteger {
             arr[arr[i]%length]=arr[arr[i]%length] +length;
         }
     }
-
+    static int a;
     public static void main(String[] args)
     {
         int[] arr={8,4,3,1,2,2,6,7,6,8};
@@ -42,5 +43,6 @@ public class RepeatingInteger {
         System.out.println(rpi.hashCode());
         System.out.println(Integer.toHexString(rpi.hashCode()));
         System.out.println(rpi.toString());
+        System.out.println(a);
     }
 }
