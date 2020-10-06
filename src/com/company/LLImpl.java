@@ -163,6 +163,23 @@ public class LLImpl {
         }
     }
 
+    static void printLinkedList(SinglyLinkedListNode head) {
+
+        while(head!=null)
+        {
+            System.out.println(head.data);
+            head=head.next;
+        }
+
+    }
+
+    static void reverseAList(SinglyLinkedListNode head)
+    {
+        
+    }
+
+
+
 
     public static void main(String[] args)
     {
