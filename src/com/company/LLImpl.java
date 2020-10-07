@@ -163,6 +163,16 @@ public class LLImpl {
         }
     }
 
+    static void reversePrint(SinglyLinkedListNode head) {
+        head=reverseAList(head);
+
+        while (head!=null)
+        {
+            System.out.println(head.data);
+            head=head.next;
+        }
+    }
+
     static void printLinkedList(SinglyLinkedListNode head) {
 
         while(head!=null)
@@ -173,9 +183,27 @@ public class LLImpl {
 
     }
 
-    static void reverseAList(SinglyLinkedListNode head)
+    static SinglyLinkedListNode reverseAList(SinglyLinkedListNode head)
     {
-        
+        SinglyLinkedListNode temp=head;
+        SinglyLinkedListNode newList=null;
+
+        while(temp!=null)
+        {
+            SinglyLinkedListNode t=temp.next;
+            temp.next=null;
+
+            if(newList==null)
+                newList=temp;
+            else
+            {
+                temp.next=newList;
+            }
+                newList=temp;
+
+            temp=t;
+        }
+        return newList;
     }
 
 
@@ -193,6 +221,8 @@ public class LLImpl {
         }
 
         printLL(node);
+
+        reversePrint(node);
     }
 
 }
