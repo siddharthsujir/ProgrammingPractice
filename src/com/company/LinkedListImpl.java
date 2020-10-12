@@ -109,6 +109,59 @@ public class LinkedListImpl {
         }
 
     }
+
+    public ListNode reverseBetween(ListNode head, int m, int n) {
+        ListNode temp=head;
+        int i=1;
+        if(m==n)
+            return head;
+
+        if(m==1)
+            temp=reverseList(temp,i,n );
+        else {
+            while(i<m-1)
+            {
+                temp=head.next;
+                i++;
+            }
+            temp.next=reverseList(temp.next,i,n );
+        }
+
+
+        return head;
+
+    }
+
+    public static ListNode reverseList(ListNode head, int i, int n)
+    {
+        ListNode temp=head;
+        ListNode newList=null;
+
+        while(temp!=null && i<n)
+        {
+            ListNode t=temp.next;
+            temp.next=null;
+
+            if(newList==null)
+                newList=temp;
+            else
+            {
+                temp.next=newList;
+            }
+            newList=temp;
+
+            temp=t;
+
+            i++;
+        }
+        ListNode t1=newList;
+        while(t1.next!=null)
+        {
+            t1=t1.next;
+        }
+        t1.next=temp;
+        return newList;
+    }
 }
 
 
