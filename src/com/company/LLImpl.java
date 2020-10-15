@@ -206,6 +206,24 @@ public class LLImpl {
         return newList;
     }
 
+    static boolean hasCycle(SinglyLinkedListNode head) {
+        SinglyLinkedListNode slwPtr=head;
+        SinglyLinkedListNode fastPtr=head.next;
+
+        while(slwPtr!=null && fastPtr!=null)
+        {
+            if(slwPtr==fastPtr)
+                return true;
+
+            slwPtr=slwPtr.next;
+            if(fastPtr.next!=null)
+                fastPtr=fastPtr.next.next;
+            else
+                fastPtr=null;
+        }
+        return false;
+    }
+
 
 
 

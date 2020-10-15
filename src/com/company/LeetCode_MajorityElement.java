@@ -33,7 +33,7 @@ public class LeetCode_MajorityElement {
 
     }
 
-    public int majorityElement(int[] nums) {
+    public static int majorityElement(int[] nums) {
 
         int candidate=findCandidate(nums);
             if(checkIfMajority(nums,candidate))
