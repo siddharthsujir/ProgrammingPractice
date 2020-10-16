@@ -158,6 +158,8 @@ public class LLImpl {
     {
         while (node!=null)
         {
+            if(node.data==3)
+                deleteNode(node);
             System.out.println(node.data);
             node=node.next;
         }
@@ -177,6 +179,7 @@ public class LLImpl {
 
         while(head!=null)
         {
+
             System.out.println(head.data);
             head=head.next;
         }
@@ -224,6 +227,14 @@ public class LLImpl {
         return false;
     }
 
+    public static void deleteNode(SinglyLinkedListNode node)
+    {
+        SinglyLinkedListNode temp=node.next;
+        node.data=temp.data;
+        node.next=temp.next;
+        temp=null;
+
+    }
 
 
 
@@ -240,7 +251,7 @@ public class LLImpl {
 
         printLL(node);
 
-        reversePrint(node);
+       // reversePrint(node);
     }
 
 }
