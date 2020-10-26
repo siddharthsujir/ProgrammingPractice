@@ -339,25 +339,43 @@ public class BinaryTree_Pblm {
     public int kthSmallest(TreeNode root, int k) {
         p=0;
         output=0;
-        inOrderTraversal(root,k);
+        inOrderTraversal2(root,k);
         return output;
 
     }
 
-    public void inOrderTraversal(TreeNode node,int k)
+    public void inOrderTraversal2(TreeNode node,int k)
     {
         if (node==null)
             return;
         else
         {
-            inOrderTraversal(node.left,k);
+            inOrderTraversal2(node.left,k);
             p++;
             if(p==k)
                 output=node.data;
 
 
-            inOrderTraversal(node.right,k);
+            inOrderTraversal2(node.right,k);
         }
+    }
+
+    List<Integer> list=new ArrayList<>();
+    public List<Integer> inorderTraversal(TreeNode root) {
+        if(root==null)
+            return list;
+        else
+            list= inorderTraversal(root.left);
+        if(list==null)
+        {
+            //list=new ArrayList<>();
+            list.add(root.data);
+        }
+        else
+            list.add(root.data);
+
+        list=inorderTraversal(root.right);
+        return list;
     }
 
 
