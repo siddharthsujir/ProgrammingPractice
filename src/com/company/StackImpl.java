@@ -10,10 +10,7 @@ public class StackImpl {
         int[] array = {5,4,3,2,1};
         Stack2 s = new Stack2();
 
-        for(int i:array)
-        {
-            s.push(i);
-        }
+
         //s.printStack();
 
         System.out.println("Starting to pop");
@@ -39,11 +36,7 @@ class Stack2
         top=null;
     }
 
-    public void push(int value)
-    {
-            top= LinkedListImpl.insertAtBeginning(top,value);
-            
-    }
+
 
     public void printStack()
     {
