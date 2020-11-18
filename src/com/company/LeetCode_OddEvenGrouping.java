@@ -96,6 +96,47 @@ public class LeetCode_OddEvenGrouping {
             node=node.next;
         }
     }
+
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+
+        if(l1==null)
+            return l2;
+        if(l2==null)
+            return l1;
+
+        ListNode temp1=l1;
+        ListNode temp2=l2;
+
+        while(temp1!=null && temp2!=null)
+        {
+
+            if(temp1.val<temp2.val)
+            {
+                if(temp1.next!=null && temp1.val==temp1.next.val)
+                    temp1=temp1.next;
+                else
+                {
+                    ListNode t=temp2.next;
+                    temp2.next=null;
+                    temp2.next=temp1.next;
+                    temp1.next=temp2;
+                    temp2=t;
+                    temp1=temp1.next;
+                }
+            }
+            else
+            {
+                ListNode t=temp2.next;
+                temp2.next=null;
+                temp2.next=temp1.next;
+                temp1.next=temp2;
+                temp2=t;
+            }
+
+        }
+        return l1;
+    }
+
     public static void main(String[] args)
     {
 
