@@ -3,7 +3,7 @@ package com.company;
 public class ReplaceWithMaximumElement {
 
     public static void main(String[] args) {
-        int[] arr = {16, 17, 4, 3, 5, 2};
+        int[] arr ={1}; //{16, 17, 4, 3, 5, 2};
 
         arr = replace(arr);
 
