@@ -21,9 +21,29 @@ public class GK_MissingNumber {
         }
 
     }
+
+
+    public static int findMissing2(int[] arr,int n)
+    {
+        int a =1;
+
+        for(int i=2;i<=n;i++)
+        {
+            a=a^i;
+        }
+        int b=arr[0];
+        for(int i=1;i<arr.length;i++)
+        {
+            b=b^arr[i];
+        }
+        return a^b;
+    }
+
     public static void main(String[] args)
     {
         int[] arr={2,1,4,5};
-        findMissingNumbers(arr,6);
+        //findMissingNumbers(arr,6);
+
+        System.out.println(findMissing2(arr,5));
     }
 }
