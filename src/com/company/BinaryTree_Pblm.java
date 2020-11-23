@@ -394,7 +394,7 @@ public class BinaryTree_Pblm {
         if(root.val<min || root.val>max)
             return false;
 
-        return (BSTUtil(root.left,min,root.val-1) && BSTUtil(root.right,root.val+1,max))
+        return (BSTUtil(root.left,min,root.val-1) && BSTUtil(root.right,root.val+1,max));
     }
 
 
