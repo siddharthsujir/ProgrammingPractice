@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7c0b5a4-5388-4d94-b053-b57d103ea0b4" name="Default Changelist" comment="" />
+    <list default="true" id="b7c0b5a4-5388-4d94-b053-b57d103ea0b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/BinaryTree_Pblm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/BinaryTree_Pblm.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +21,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1U7BTZqihC0sSB4ShjlO1OlKiKV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../futureofbusiness" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -37,9 +46,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JumpingOnClouds">
-    <configuration name="AbstractInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.AbstractInterface" />
+  <component name="RunManager" selected="Application.GK_MissingNumber">
+    <configuration name="GK_MissingNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.GK_MissingNumber" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -51,8 +60,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionalInterfaceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.FunctionalInterfaceDemo" />
+    <configuration name="Leetcode_SearchinRotatedSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Leetcode_SearchinRotatedSortedArray" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -64,8 +73,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JumpingOnClouds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.JumpingOnClouds" />
+    <configuration name="MergeSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.MergeSortedArrays" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -77,8 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaticTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.StaticTesting" />
+    <configuration name="ReplaceWithMaximumElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.ReplaceWithMaximumElement" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -90,8 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.StringDemo" />
+    <configuration name="StockProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.StockProfit" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -105,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JumpingOnClouds" />
-        <item itemvalue="Application.FunctionalInterfaceDemo" />
-        <item itemvalue="Application.StringDemo" />
-        <item itemvalue="Application.AbstractInterface" />
-        <item itemvalue="Application.StaticTesting" />
+        <item itemvalue="Application.GK_MissingNumber" />
+        <item itemvalue="Application.ReplaceWithMaximumElement" />
+        <item itemvalue="Application.MergeSortedArrays" />
+        <item itemvalue="Application.StockProfit" />
+        <item itemvalue="Application.Leetcode_SearchinRotatedSortedArray" />
       </list>
     </recent_temporary>
   </component>
@@ -125,5 +134,30 @@
       <updated>1574697761152</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/HackerRank_PreORderTraversal.java</url>
+          <line>10</line>
+          <option name="temporary" value="true" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

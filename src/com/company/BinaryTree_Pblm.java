@@ -20,13 +20,14 @@ import java.util.*;
 
 class TreeNode
 {
-    int data;
+    int val;
     TreeNode left;
     TreeNode right;
 
     TreeNode(int data)
     {
-        this.data=data;
+
+        this.val=data;
         this.left=null;
         this.right=null;
     }
@@ -35,7 +36,7 @@ class TreeNode
     {
         this.left=leftNode;
         this.right=rightNode;
-        this.data=data;
+        this.val=data;
     }
 }
 
@@ -48,7 +49,7 @@ public class BinaryTree_Pblm {
             if(root==null)
                 return;
             inOrderTraversal_Recursion(root.left);
-            System.out.println(root.data);
+            System.out.println(root.val);
             inOrderTraversal_Recursion(root.right);
         }
 
@@ -57,7 +58,7 @@ public class BinaryTree_Pblm {
         if(root==null)
             return;
         if(root!=null)
-            System.out.println(root.data);
+            System.out.println(root.val);
             preOrder(root.left);
             preOrder(root.right);
     }
@@ -204,7 +205,7 @@ public class BinaryTree_Pblm {
 
             if(i==0)
             {
-                output.get(i).add(j,current.data);
+                output.get(i).add(j,current.val);
                j=0;
                i++;
                 output.add(i,new ArrayList<Integer>());
@@ -212,7 +213,7 @@ public class BinaryTree_Pblm {
             else
             {
 
-                output.get(i).add(j,current.data);
+                output.get(i).add(j,current.val);
                 j++;
                 if(j==2)
                 {
@@ -260,12 +261,12 @@ public class BinaryTree_Pblm {
 
         for(int k=end;k>=start;k--)
         {
-            if(arr[k]<child.data)
+            if(arr[k]<child.val)
             {
                 child.left=new TreeNode(arr[k],null,null);
                 child=child.left;
             }
-            else if(arr[k]>root.data)
+            else if(arr[k]>root.val)
             {
                 child.right=new TreeNode(arr[k],null,null);
                 child=child.right;
@@ -280,12 +281,12 @@ public class BinaryTree_Pblm {
 
         for(int k=start;k<=end;k++)
         {
-            if(arr[k]<child.data)
+            if(arr[k]<child.val)
             {
                 child.left=new TreeNode(arr[k],null,null);
                 child=child.left;
             }
-            else if(arr[k]>root.data)
+            else if(arr[k]>root.val)
             {
                 child.right=new TreeNode(arr[k],null,null);
                 child=child.right;
@@ -353,7 +354,7 @@ public class BinaryTree_Pblm {
             inOrderTraversal2(node.left,k);
             p++;
             if(p==k)
-                output=node.data;
+                output=node.val;
 
 
             inOrderTraversal2(node.right,k);
@@ -369,14 +370,33 @@ public class BinaryTree_Pblm {
         if(list==null)
         {
             //list=new ArrayList<>();
-            list.add(root.data);
+            list.add(root.val);
         }
         else
-            list.add(root.data);
+            list.add(root.val);
 
         list=inorderTraversal(root.right);
         return list;
     }
+
+
+    public static boolean isBST(TreeNode root)
+    {
+        return BSTUtil(root,Integer.MIN_VALUE,Integer.MAX_VALUE);
+        //return false;
+    }
+
+    public static boolean BSTUtil(TreeNode root,int min,int max)
+    {
+        if(root==null)
+            return true;
+
+        if(root.val<min || root.val>max)
+            return false;
+
+        return (BSTUtil(root.left,min,root.val-1) && BSTUtil(root.right,root.val+1,max))
+    }
+
 
 
 
