@@ -28,6 +28,25 @@ public class GK_FlatteningLL {
         return head;
     }
 
+    public static LL flatten2(LL node)
+    {
+        LL temp1=node;
+        LL temp2=node;
+        while (temp1.next!=null)
+        {
+            LL tNext=temp1.next;
+
+            while (temp2.bottom!=null)
+            {
+                temp2=temp2.bottom;
+            }
+            temp2.bottom=tNext;
+            tNext.next=null;
+            temp1=temp1.next;
+        }
+        return  node;
+    }
+
     public static void main(String[] args)
     {
         LL node=new LL(1);
@@ -35,12 +54,12 @@ public class GK_FlatteningLL {
         node.bottom.bottom=new LL(4);
         node.next=new LL(3);
 
-        node=flatten(node);
+        node=flatten2(node);
 
         while (node!=null)
         {
             System.out.print(node.data+" ");
-            node=node.next;
+            node=node.bottom;
         }
 
     }
