@@ -41,7 +41,7 @@ public class GK_FlatteningLL {
                 temp2=temp2.bottom;
             }
             temp2.bottom=tNext;
-            tNext.next=null;
+           // q tNext.next=null;
             temp1=temp1.next;
         }
         return  node;
