@@ -4,13 +4,13 @@ public class GK_CheckIfStringRotatedTwoPlaced {
 
     public static void main(String[] args)
     {
-        System.out.println(checkIfRotatedTwoPlaces("geeksforgeeks","geeksgeeksfor"));
+        System.out.println(checkIfRotatedTwoPlaces("fsbcnuvqhffbsaqxwp","wpfsbcnuvqhffbsaqx"));
     }
 
     public static boolean checkIfRotatedTwoPlaces(String s1,String s2)
     {
 
-        //System.out.println(rotateString(s1,2));
+        System.out.println(rotateString(s1,2));
         if(rotateString(s1,2).equals(s2))
             return true;
         else
