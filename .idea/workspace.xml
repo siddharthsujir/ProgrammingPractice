@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c0b5a4-5388-4d94-b053-b57d103ea0b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/IB_HotelBookingPossible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/IB_FactorsOfNum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +46,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IB_HotelBookingPossible">
+  <component name="RunManager" selected="Application.IB_FactorsOfNum">
+    <configuration name="IB_FactorsOfNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.IB_FactorsOfNum" />
+      <module name="JavaPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IB_FindRepeatedNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.IB_FindRepeatedNumber" />
       <module name="JavaPractice" />
@@ -99,26 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IB_SortedArrayWithSquares" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.IB_SortedArrayWithSquares" />
-      <module name="JavaPractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IB_FactorsOfNum" />
         <item itemvalue="Application.IB_HotelBookingPossible" />
         <item itemvalue="Application.IB_PerfectPeakOfArray" />
         <item itemvalue="Application.IB_LargestNumber" />
         <item itemvalue="Application.IB_FindRepeatedNumber" />
-        <item itemvalue="Application.IB_SortedArrayWithSquares" />
       </list>
     </recent_temporary>
   </component>
