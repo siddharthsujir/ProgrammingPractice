@@ -1,6 +1,5 @@
 package com.company;
 
-import common;
 import java.util.*;
 
 public class IB_LargestNumber {
@@ -19,7 +18,6 @@ public class IB_LargestNumber {
         for(int i=0;i<A.length;i++)
             arr.add(i,A[i]);
 
-        Integer[] sorted = ArrayUtils.toObject(A);
 
         Collections.sort(arr,
                 new Comparator<Integer>() {
