@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c0b5a4-5388-4d94-b053-b57d103ea0b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/IB_FactorsOfNum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/IB_DecimalToBinary.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,9 +45,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IB_FactorsOfNum">
-    <configuration name="IB_FactorsOfNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.IB_FactorsOfNum" />
+  <component name="RunManager" selected="Application.IB_DecimalToBinary">
+    <configuration name="IB_DecimalToBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.IB_DecimalToBinary" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -60,8 +59,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IB_FindRepeatedNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.IB_FindRepeatedNumber" />
+    <configuration name="IB_FactorsOfNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.IB_FactorsOfNum" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IB_DecimalToBinary" />
         <item itemvalue="Application.IB_FactorsOfNum" />
         <item itemvalue="Application.IB_HotelBookingPossible" />
         <item itemvalue="Application.IB_PerfectPeakOfArray" />
         <item itemvalue="Application.IB_LargestNumber" />
-        <item itemvalue="Application.IB_FindRepeatedNumber" />
       </list>
     </recent_temporary>
   </component>
