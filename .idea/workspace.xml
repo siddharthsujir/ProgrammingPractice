@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c0b5a4-5388-4d94-b053-b57d103ea0b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/IB_PalindromeInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/IB_NextSimilarNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/IB_PowerOfTwoIntegers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/IB_PowerOfTwoIntegers.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IB_DecimalToBinary">
+  <component name="RunManager" selected="Application.IB_NextSimilarNumber">
     <configuration name="IB_DecimalToBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.IB_DecimalToBinary" />
       <module name="JavaPractice" />
@@ -85,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IB_LargestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.IB_LargestNumber" />
+    <configuration name="IB_NextSimilarNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.IB_NextSimilarNumber" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -113,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IB_NextSimilarNumber" />
         <item itemvalue="Application.IB_DecimalToBinary" />
         <item itemvalue="Application.IB_FactorsOfNum" />
         <item itemvalue="Application.IB_HotelBookingPossible" />
         <item itemvalue="Application.IB_PerfectPeakOfArray" />
-        <item itemvalue="Application.IB_LargestNumber" />
       </list>
     </recent_temporary>
   </component>
