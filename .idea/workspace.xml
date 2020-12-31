@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c0b5a4-5388-4d94-b053-b57d103ea0b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/IB_IsPrime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/IB_PrettyPrint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IB_NextSimilarNumber">
+  <component name="RunManager" selected="Application.IB_PrettyPrint">
     <configuration name="IB_DecimalToBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.IB_DecimalToBinary" />
       <module name="JavaPractice" />
@@ -99,8 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IB_PerfectPeakOfArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.IB_PerfectPeakOfArray" />
+    <configuration name="IB_PrettyPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.IB_PrettyPrint" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IB_PrettyPrint" />
         <item itemvalue="Application.IB_NextSimilarNumber" />
         <item itemvalue="Application.IB_DecimalToBinary" />
         <item itemvalue="Application.IB_FactorsOfNum" />
         <item itemvalue="Application.IB_HotelBookingPossible" />
-        <item itemvalue="Application.IB_PerfectPeakOfArray" />
       </list>
     </recent_temporary>
   </component>
