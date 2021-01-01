@@ -11,9 +11,24 @@ public class IB_SqrtOfNo {
 
         int i=1;
         double res=0;
+
+        if(A>100000)
+            i=i*100000;
+        if(A>1000000)
+            i=i*10;
+        else if(A>10000000)
+            i=i*10;
+        else if(A>100000000)
+            i=i*10;
+        int mid=A/2;
+        int s=0;
+
+
+
+
         while(true)
         {
-            System.out.println("i"+i);
+         // .  System.out.println("i"+i);
             if(i*i==A)
             {
 
@@ -34,7 +49,7 @@ public class IB_SqrtOfNo {
 
     public static double square(int A,double i,double j)
     {
-        System.out.println("i "+i+" j"+j);
+       // System.out.println("i "+i+" j"+j);
         double mid=(i+j)/2;
         double mul=mid*mid;
 
