@@ -4,64 +4,39 @@ public class IB_SqrtOfNo {
 
     public static void main(String[] args)
     {
-        System.out.println(sqrt(2147483647));
+        System.out.println(sqrtOfInt(3));
     }
 
-    public static long sqrt(int A) {
-
-        int i=1;
-        double res=0;
-
-        if(A>100000)
-            i=i*100000;
-        if(A>1000000)
-            i=i*10;
-        else if(A>10000000)
-            i=i*10;
-        else if(A>100000000)
-            i=i*10;
-        int mid=A/2;
-        int s=0;
-
-
-
-
-        while(true)
-        {
-         // .  System.out.println("i"+i);
-            if(i*i==A)
-            {
-
-                return i*i;
-            }
-            else if(i*i>A)
-            {
-                res=square(A,i-1,i);
-                return Math.round(Math.floor(res));
-            }
-
-
-            i++;
-        }
-
-
-    }
-
-    public static double square(int A,double i,double j)
+    public static long sqrtOfInt(int A)
     {
-       // System.out.println("i "+i+" j"+j);
-        double mid=(i+j)/2;
-        double mul=mid*mid;
+        long start=1;
+        long end=A;
+        long ans=0;
 
-        if(mul==A || Math.abs(mul-A)<0.00001)
-            return mid;
+        if(A==0)
+            return 0;
+        if(A==1)
+            return 1;
 
-        else if(mul<A)
-            return square(A,mid,j);
+        while(start<=end)
+        {
 
-        else
-            return square(A,i,mid);
+          //  System.out.println("Start "+start+" end "+end);
+            long mid=(start+end)/2;
 
+            if(mid*mid==A)
+                return mid;
 
+            long t=mid*mid;
+
+            if(mid*mid<A)
+            {
+                start=mid+1;
+                ans=mid;
+            }
+            else
+                end=mid-1;
+        }
+        return ans;
     }
 }
