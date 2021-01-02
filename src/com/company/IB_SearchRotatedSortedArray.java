@@ -4,7 +4,7 @@ public class IB_SearchRotatedSortedArray {
 
     public static void main(String[] args)
     {
-            int[] arr={101, 103, 106, 109, 158, 164, 182, 187, 202, 205, 2, 3, 32, 57, 69, 74, 81, 99, 100};
+            int[] arr={ 106, 109, 158, 164, 182, 187, 202, 205, 2, 3, 32, 57, 69, 74, 81, 99, 100,101, 103};
             //System.out.println(search(arr,6));
         System.out.println(search(arr,202));
     }
