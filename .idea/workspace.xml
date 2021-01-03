@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c0b5a4-5388-4d94-b053-b57d103ea0b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/IB_LengthOfLastWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/IB_MergeOverlappingIntervals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/IB_MatrixSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/IB_MatrixSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/IB_PalidromeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/IB_PalidromeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/IB_ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/IB_ReverseString.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
