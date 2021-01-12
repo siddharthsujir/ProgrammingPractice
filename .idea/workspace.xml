@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c0b5a4-5388-4d94-b053-b57d103ea0b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/IB_RemoveElementFromArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/IB_ImplementPowerFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,9 +46,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IB_RemoveElementFromArray">
-    <configuration name="IB_LargestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.IB_LargestNumber" />
+  <component name="RunManager" selected="Application.IB_ImplementPowerFunction">
+    <configuration name="IB_ImplementPowerFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.IB_ImplementPowerFunction" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -60,8 +60,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IB_MedianOfArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.IB_MedianOfArray" />
+    <configuration name="IB_LargestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.IB_LargestNumber" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IB_ImplementPowerFunction" />
         <item itemvalue="Application.IB_RemoveElementFromArray" />
         <item itemvalue="Application.IB_NthFibonacci" />
         <item itemvalue="Application.IB_Stringoholics" />
         <item itemvalue="Application.IB_LargestNumber" />
-        <item itemvalue="Application.IB_MedianOfArray" />
       </list>
     </recent_temporary>
   </component>
