@@ -32,4 +32,26 @@ public class IB_PairWithGivenDifference {
 
 
     }
+
+
+    public static int pairDiffK(int[] A,int B)
+    {
+        int i=A.length-1;
+        int j=0;
+
+        while(i>0)
+        {
+            while(j<i)
+            {
+                int diff=A[i]-A[j];
+
+                if(diff==B)
+                    return 1;
+
+                j++;
+            }
+            i++;
+        }
+        return 0;
+    }
 }
