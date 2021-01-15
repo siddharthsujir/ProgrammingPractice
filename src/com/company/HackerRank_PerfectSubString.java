@@ -9,6 +9,8 @@ import java.util.Set;
 
 public class HackerRank_PerfectSubString {
 
+    // Count perfect
+    // Substring where frequency of chars in substring == k
     /*
      * Complete the 'perfectSubstring' function below.
      *
