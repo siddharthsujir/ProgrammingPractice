@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7c0b5a4-5388-4d94-b053-b57d103ea0b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/IB_TrailingZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/IB_CountSetBit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,9 +47,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IB_TrailingZero">
-    <configuration name="IB_ImplementPowerFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.IB_ImplementPowerFunction" />
+  <component name="RunManager" selected="Application.IB_CountSetBit">
+    <configuration name="IB_CountSetBit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.IB_CountSetBit" />
       <module name="JavaPractice" />
       <extension name="coverage">
         <pattern>
@@ -115,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IB_CountSetBit" />
         <item itemvalue="Application.IB_TrailingZero" />
         <item itemvalue="Application.IB_SingleElement" />
         <item itemvalue="Application.IB_SortByColor" />
         <item itemvalue="Application.IB_PairWithGivenDifference" />
-        <item itemvalue="Application.IB_ImplementPowerFunction" />
       </list>
     </recent_temporary>
   </component>
