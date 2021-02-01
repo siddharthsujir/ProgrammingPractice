@@ -1,0 +1,44 @@
+
+
+
+singleton
+LRU cache
+hash map details
+
+
+Emp
+
+Grade
+10000-20000 1
+20000-30000 2
+	    3
+
+
+fname, lastname, salary, Department
+A, B		 1000
+A, C		 10000
+
+
+Select fname,lastname, salary,rank over(partition by departmentid)
+
+
+list-
+list
+
+string1==string2//
+string2.equal()//
+
+HashMap<"",>
+equals and hashcode
+
+
+
+
+
+
+
+
+
+
+
+
