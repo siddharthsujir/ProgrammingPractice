@@ -1,7 +1,5 @@
 package com.company;
 
-import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
-
 import java.util.HashMap;
 
 public class LeetCode_MajorityElement {
