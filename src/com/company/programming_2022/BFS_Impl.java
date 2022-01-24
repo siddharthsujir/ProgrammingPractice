@@ -17,6 +17,9 @@ public class BFS_Impl {
         g.addEdge(3,3);
 
         g.BFS(0);
+
+        System.out.println("--------------------DFS-------------");
+        g.DFS(2);
     }
 }
 
@@ -62,6 +65,32 @@ class Graph
                 {
                     visited[n] = true;
                     queue.add(n);
+                }
+            }
+        }
+
+    }
+
+
+    public void DFS(int s)
+    {
+        boolean[] visited = new boolean[V];
+        LinkedList<Integer> queue = new LinkedList<>();
+
+        visited[s] = true;
+        queue.add(s);
+        while(queue.size()!=0)
+        {
+            s = queue.poll();
+            System.out.print(" "+s);
+            Iterator<Integer> i = adj.get(s).iterator();
+            while (i.hasNext())
+            {
+                int val = i.next();
+                if(!visited[val]){
+                    visited[val] = true;
+                    //System.out.println(val);
+                    queue.add(val);
                 }
             }
         }
