@@ -41,6 +41,25 @@ public class LinkedListImpl {
 
     }
 
+
+    // 1 --> 2 --> 3 --> 4 -->5
+    //
+    public Node reverseList(Node head)
+    {
+        Node temp = head;
+        Node prev = null;
+        while(temp!=null)
+        {
+            Node current  = temp;
+            Node next = temp.next;
+            current.next = prev;
+            prev = current;
+            temp = next;
+        }
+        head = prev;
+        return head;
+    }
+
     public static  void main(String[] args)
     {
         Node head = null;
@@ -49,6 +68,10 @@ public class LinkedListImpl {
         for (int j : arr)
             head = ll.insert(head, j);
 
+        System.out.println("Before Reverse!");
+        ll.printLL(head);
+        head = ll.reverseList(head);
+        System.out.println("After Reverse");
         ll.printLL(head);
 
     }

@@ -76,20 +76,19 @@ class Graph
     {
         boolean[] visited = new boolean[V];
         LinkedList<Integer> queue = new LinkedList<>();
-
+        System.out.print(" "+s);
         visited[s] = true;
         queue.add(s);
         while(queue.size()!=0)
         {
             s = queue.poll();
-            System.out.print(" "+s);
             Iterator<Integer> i = adj.get(s).iterator();
             while (i.hasNext())
             {
                 int val = i.next();
                 if(!visited[val]){
                     visited[val] = true;
-                    //System.out.println(val);
+                    System.out.print(" "+val);
                     queue.add(val);
                 }
             }
