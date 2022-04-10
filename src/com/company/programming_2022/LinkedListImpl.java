@@ -60,6 +60,33 @@ public class LinkedListImpl {
         return head;
     }
 
+
+    // 1-->2-->3-->4-->5 k ==2
+    // 4-->5-->1-->2-->3
+    public Node rotateList(Node head, int k)
+    {
+        int i = 1;
+        int j = 1;
+        Node temp1 = head;
+        Node temp2 = head;
+        while(temp1!= null && i<k)
+        {
+            i++;
+            temp1 = temp1.next;
+        }
+
+        Node kthNode  = temp1;
+
+        while (temp1.next!=null)
+            temp1 = temp1.next;
+
+        temp1.next = head;
+        head = kthNode.next;
+        kthNode.next = null;
+
+        return head;
+    }
+
     public static  void main(String[] args)
     {
         Node head = null;
@@ -70,8 +97,10 @@ public class LinkedListImpl {
 
         System.out.println("Before Reverse!");
         ll.printLL(head);
-        head = ll.reverseList(head);
-        System.out.println("After Reverse");
+        //head = ll.reverseList(head);
+        System.out.println("After Rotate");
+        head = ll.rotateList(head, 2);
+
         ll.printLL(head);
 
     }
